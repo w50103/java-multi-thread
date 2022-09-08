@@ -10,7 +10,10 @@ package com.imyiren.part1.yield;
  */
 public class Run {
     public static void main(String[] args) {
-        MyThread thread = new MyThread();
+        MyThread thread = new MyThread("thread--0");
         thread.start();
+
+        MyThread thread1 = new MyThread();
+        thread1.start();
     }
 }
